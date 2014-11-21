@@ -1,0 +1,50 @@
+body {
+    background-color: black;
+}
+.backgroundImg {
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.icons {
+    float: right;
+    height: 48px;
+    width: 48px;
+    border: 0;
+}
+.pageCenter {
+    float: middle;
+    position: fixed; /* or absolute */
+    top: 45%;
+    display: inline;
+}
+.locator {
+    color: #ffffff;
+    font-family: "Times New Roman", Georgia, Serif;
+    font-style: italic;
+    font-size: 40px;
+}
+.destination {
+    font-size: 40px;
+    font-family: "Times New Roman", Georgia, Serif;
+    color: #ffffff;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border-style: solid;
+    border-radius: 2px;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+
+@media (max-width: 767px) {
+  .deleteElements {
+    transition:none;
+    -webkit-transition:none;
+    -moz-transition:none;
+  }
+}
+
