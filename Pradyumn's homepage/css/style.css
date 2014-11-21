@@ -1,0 +1,82 @@
+body {
+	background: url("../images/home.jpg");
+	background-size: 100%;
+}
+
+#question {
+	font-family: "Adobe Garamond Pro";
+	color: white;
+	font-style: italic;
+	font-size: 2.2em;
+	text-align: right;
+}
+
+#dropdown {
+    margin-top: 20%;
+}
+
+#explore {
+	background: transparent;
+	font-family: futura;
+	font-size: 2em;
+	color: white;
+	border: 2px solid white;
+}
+
+#cities {
+	background: transparent;
+	position: relative;
+	width: 100%;
+	border: 2px solid white;
+}
+
+#cities a {
+    color: white !important;
+    background-color: transparent !important;
+    text-align: center;
+	font-family: futura;
+	font-size: 1.5em;
+}
+
+#cities a:hover {
+	background: rgba(255,255,255,0.2) !important;
+}
+
+.sidebar-brand {
+	color: #FF9966;
+	font-family: futura;
+	font-size: 1em;
+}
+
+#logo {
+	width: 50% !important;
+	float: right;
+}
+
+#menu-toggle {
+	font-family: futura;
+	font-size: 1.2em;
+	color: white;
+	background: transparent;
+	border: 2px solid white;
+	float: left;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav {
+    width: 100%;
+    text-align: center;
+  }
+  .navbar-nav > li {
+    float: none;
+    display: inline-block;
+  }
+  .navbar-nav > li.navbar-right {
+    float: right !important;
+  }
+}
+
+.navbar {
+    background: transparent;
+    border: none;
+ }

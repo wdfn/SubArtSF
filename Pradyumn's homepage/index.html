@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Subart SF</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/sidebar.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div id="wrapper" class="container">
+    
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <div>
+                <li class="sidebar-brand">SUBWAY ART GUIDE</li>
+                </div>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">CITY MAPS</a></li>
+                <li><a href="#">ABOUT</a></li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+      <div id="page-content-wrapper">
+        
+        <div class="row">
+          <nav class="navbar navbar-default" role="navigation">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>    
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul id="nav" class="nav navbar-nav">
+                <li id="nav" class="navbar-left"><a href="#menu-toggle" class="btn btn-default" id="menu-toggle">MENU</a></li>
+                <li id="nav" class="navbar-right navbar-brand"><img id="logo" src="images/logo2.png" alt="SUBARTSF"></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+
+        <div id="dropdown" class="row">
+          <div id="question" class="col-lg-6">
+            Where do you want to go today?
+          </div>
+          <div class="col-lg-3">
+            <div class="dropdown">
+              <button class="btn btn-block dropdown-toggle" type="button" id="explore" data-toggle="dropdown" aria-expanded="true">
+                EXPLORE
+                <span class="caret"></span>
+              </button>
+              <ul id="cities" class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">PARIS</a></li>
+                <li role="presentation" class="divider"></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">MONTREAL</a></li>
+                <li role="presentation" class="divider"></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">MUNICH</a></li>
+                <li role="presentation" class="divider"></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">STOCKHOLM</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- page-content-wrapper -->
+    </div>
+    <!-- wrapper -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/home.js"></script>
+    <script>
+      $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+      });
+    </script>
+  </body>
+
+</html>
