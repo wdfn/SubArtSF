@@ -19,6 +19,7 @@
 
     <!-- Custom Fonts -->
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -31,6 +32,7 @@
 
 <body>
 
+    <div id="logo"> <a href="http://subartsf.org/"><img class="pull-right" src="img/logo2.png" width=50% height=50%></a> </div>
     <!-- Navigation -->
 
     <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle">MENU</a>
@@ -38,8 +40,9 @@
         <ul class="sidebar-nav">
             <a id="menu-close" href="#" class="btn btn-dark btn-lg pull-right toggle">CLOSE</a>
             <li class="sidebar-brand">
-                <a href="#">Subway Art Guide</a>
+                <a id="menu-header" href="#">Subway Art Guide</a>
             </li>
+            <br>
             <li>
                 <a href="#">Home</a>
             </li>
@@ -50,15 +53,27 @@
                 <a href="#">About</a>
             </li>
         </ul>
+
+        <ul class="navbar-bottom">
+            <li>
+                <a href="#">Support</a>
+            </li>
+            <li>
+                <a href="#">FAQ</a>
+            </li>
+            <li>
+                <a href="#">Contact Us</a>
+            </li>
+        </ul>
     </nav>
 
     <!-- Social Media Icons -->
     <nav id="nav">
         <ul>
-            <li><a href="#">FB</a></li>
-            <li><a href="#">G+</a></li>
-            <li><a href="#">Tw</a></li>
-            <li><a href="#">Pin</a></li>
+            <li><a href="#"><img src="img/fb.png" width=30em height=30em></a></li>
+            <li><a href="#"><img src="img/gplus.gif" width=30em height=30em></a></li>
+            <li><a href="#"><img src="img/pinterest.png" width=30em height=30em></a></li>
+            <li><a href="#"><img src="img/twitter.png" width=30em height=30em></a></li>
         </ul>
     </nav>
 
@@ -70,14 +85,14 @@
             <h1 class = "pull-left"><i>Where do you want to go today?</i></h1>
 
             <div class="btn-group">
-              <button class="btn btn-default btn-lg dropdown-toggle btn-main" type="button" data-toggle="dropdown" aria-expanded="false">
-                Large button <span class="caret"></span>
+              <button class="btn btn-default btn-lg dropdown-toggle btn-main" type="button" id="explore" data-toggle="dropdown" aria-expanded="false">
+                EXPLORE <span class="caret"></span>
               </button>
-              <ul class="dropdown-menu" role="menu">
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+              <ul id = "cities" class="dropdown-menu" role="menu">
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">PARIS</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">MONTREAL</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">MUNICH</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">STOCKHOLM</a></li>
               </ul>
             </div>
 

@@ -25,7 +25,7 @@ body {
 .text-vertical-center h1 {
     margin: 0;
     padding: 0;
-    font-size: 2.5em;
+    font-size: 3em;
     font-weight: 200;
     color: #fff;
     font-family:"Adobe Garamond Pro";
@@ -100,7 +100,14 @@ hr.small {
 .sidebar-nav li a {
     display: block;
     text-decoration: none;
-    color: #999;
+    margin-left: 0.3em;
+    margin-right: 0.3em;
+    border-top: 2px solid rgba(255,255,255,0.2);
+    color: #fff;
+    font-family: 'Open Sans';
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
 }
 
 .sidebar-nav li a:hover {
@@ -129,11 +136,95 @@ hr.small {
     background: none;
 }
 
+/* BOTTOM NAVBAR LINKS */
+
+.navbar-bottom {
+    z-index:3;
+    position:absolute;
+    left:0px;
+    bottom:20px;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navbar-bottom li {
+    text-indent: 20px;
+    line-height: 20px;
+}
+
+.navbar-bottom li a {
+    display: block;
+    text-decoration: none;
+    margin-left: 0.3em;
+    margin-right: 0.3em;
+    color: #fff;
+    font-family: 'Open Sans';
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.navbar-bottom li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.navbar-bottom li a:active,
+.navbar-bottom li a:focus {
+    text-decoration: none;
+}
+
+.navbar-bottom > .sidebar-brand {
+    height: 55px;
+    font-size: 18px;
+    line-height: 55px;
+}
+
+.navbar-bottom > .sidebar-brand a {
+    color: #999;
+}
+
+.navbar-bottom > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+
+/* MENU AND CLOSE BUTTONS */
+
 #menu-toggle {
     z-index: 2;
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 1em;
+    left: 2em;
+    background: rgba(0,0,0,0.25);
+    font-family: 'Open Sans';
+    font-weight: bold;
+    font-size: 1em;
+    text-transform: uppercase;
+    color: white;
+    border: 2px solid white;
+}
+
+#menu-close {
+    background: rgba(0,0,0,0.25);
+    font-family: 'Open Sans';
+    font-weight: bold;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    color: white;
+}
+
+#menu-header{
+    font-size: 0.9em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #F5A623;
+    margin-bottom: 10em;
+    letter-spacing: 0em;
 }
 
 #sidebar-wrapper.active {
@@ -208,4 +299,45 @@ hr.small {
 .headertext {
     margin-left:10%;
     width:70%;
+}
+
+#explore {
+    background: rgba(0,0,0,0.25);
+    font-family: 'Open Sans';
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-size: 2em;
+    color: white;
+    border: 2px solid white;
+}
+
+#cities {
+    background: rgba(0,0,0,0.25);
+    border: 2px solid white;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#cities a {
+    color: white !important;
+    background-color: transparent !important;
+    text-align: center;
+    font-family: 'Open Sans';
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+#cities a:hover {
+    background: rgba(255,255,255,0.2) !important;
+}
+
+#logo {
+    position:absolute;
+    top:1em;
+    right:1em;
+    z-index: 2;
 }
