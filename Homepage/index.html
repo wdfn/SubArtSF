@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SubArtSF</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/homepage.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="logo"> <a href="http://subartsf.org/"><img class="pull-right" src="img/logo2.png" width=50% height=50%></a> </div>
+    <!-- Navigation -->
+
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle">MENU</a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-dark btn-lg pull-right toggle">CLOSE</a>
+            <li class="sidebar-brand">
+                <a id="menu-header" href="#">Subway Art Guide</a>
+            </li>
+            <br>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">City Maps</a>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+        </ul>
+
+        <ul class="navbar-bottom">
+            <li>
+                <a href="#">Support</a>
+            </li>
+            <li>
+                <a href="#">FAQ</a>
+            </li>
+            <li>
+                <a href="#">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Social Media Icons -->
+    <nav id="nav">
+        <ul>
+            <li><a href="https://www.facebook.com/SubArtSF"><img src="img/fb.png" width=30em height=30em></a></li>
+            <li><a href="https://plus.google.com/105286210592567712015/posts"><img src="img/gplus.gif" width=30em height=30em></a></li>
+            <li><a href="https://www.pinterest.com/subarts/"><img src="img/pinterest.png" width=30em height=30em></a></li>
+            <li><a href="https://twitter.com/SubArtSF"><img src="img/twitter.png" width=30em height=30em></a></li>
+        </ul>
+    </nav>
+
+
+    <header id="top" class="header">
+
+        <div class="text-vertical-center"><div class="headertext">
+
+            <h1 class = "pull-left"><i>Where do you want to go today?</i></h1>
+
+            <div class="btn-group">
+              <button class="btn btn-default btn-lg dropdown-toggle btn-main" type="button" id="explore" data-toggle="dropdown" aria-expanded="false">
+                <script>
+                var options = ['<a href="https://www.google.com/search?q=paris">PARIS</a>',
+                            '<a href="https://www.google.com/search?q=montreal">MONTREAL</a>',
+                            '<a href="bestof/munich.html">MUNICH</a>',
+                            '<a href="https://www.google.com/search?q=stockholm">STOCKHOLM</a>'];
+                document.getElementById("explore").innerHTML = options[Math.floor(Math.random() * options.length)];
+
+                </script>
+                <span class="caret"></span>
+              </button>
+              <ul id = "cities" class="dropdown-menu" role="menu">
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.google.com/search?q=paris">PARIS</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.google.com/search?q=montreal">MONTREAL</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="bestof/munich.html">MUNICH</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.google.com/search?q=stockholm">STOCKHOLM</a></li>
+              </ul>
+            </div>
+
+        </div></div>
+
+    </header>
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    </script>
+
+</body>
+
+</html>
