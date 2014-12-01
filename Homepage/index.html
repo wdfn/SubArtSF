@@ -44,7 +44,7 @@
             </li>
             <br>
             <li>
-                <a href="#">Home</a>
+                <a href="index.html">Home</a>
             </li>
             <li>
                 <a href="#">City Maps</a>
@@ -85,23 +85,33 @@
             <h1 class = "pull-left"><i>Where do you want to go today?</i></h1>
 
             <div class="btn-group">
-              <button class="btn btn-default btn-lg dropdown-toggle btn-main" type="button" id="explore" data-toggle="dropdown" aria-expanded="false">
-                <script>
-                var options = ['<a href="https://www.google.com/search?q=paris">PARIS</a>',
+              <button class="btn btn-default btn-lg btn-main dropdown-toggle" type="button" id="explore" data-toggle="dropdown" aria-expanded="false">
+                <div id="explore2"><span class="caret"></span></div>
+              </button>
+              <ul id ="cities" class="dropdown-menu" role="menu">
+                <li role="presentation" id="option0"><a role="menuitem" tabindex="-1" href="https://www.google.com/search?q=paris">PARIS</a></li>
+                <li role="presentation" id="option1"><a role="menuitem" tabindex="-1" href="https://www.google.com/search?q=montreal">MONTREAL</a></li>
+                <li role="presentation" id="option2"><a role="menuitem" tabindex="-1" href="bestof/munich.html">MUNICH</a></li>
+                <li role="presentation" id="option3"><a role="menuitem" tabindex="-1" href="https://www.google.com/search?q=stockholm">STOCKHOLM</a></li>
+              </ul>
+
+            <script>
+                var options = [
+                            '<a href="https://www.google.com/search?q=paris">PARIS</a>',
                             '<a href="https://www.google.com/search?q=montreal">MONTREAL</a>',
                             '<a href="bestof/munich.html">MUNICH</a>',
-                            '<a href="https://www.google.com/search?q=stockholm">STOCKHOLM</a>'];
-                document.getElementById("explore").innerHTML = options[Math.floor(Math.random() * options.length)];
-
+                            '<a href="https://www.google.com/search?q=stockholm">STOCKHOLM</a>',
+                            '<a href="https://www.google.com/">NEW CITY</a>'
+                            ];
+                var index = Math.floor(Math.random() * options.length)
+                var option = options[index];
+                options.splice(index, 1);
+                document.getElementById("explore2").innerHTML = option + ' <span class="caret"></span>';
+                document.getElementById("option0").innerHTML = options[0];
+                document.getElementById("option1").innerHTML = options[1];
+                document.getElementById("option2").innerHTML = options[2];
+                document.getElementById("option3").innerHTML = options[3];
                 </script>
-                <span class="caret"></span>
-              </button>
-              <ul id = "cities" class="dropdown-menu" role="menu">
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.google.com/search?q=paris">PARIS</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.google.com/search?q=montreal">MONTREAL</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="bestof/munich.html">MUNICH</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.google.com/search?q=stockholm">STOCKHOLM</a></li>
-              </ul>
             </div>
 
         </div></div>
