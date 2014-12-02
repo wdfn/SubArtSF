@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SubArtSF</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/bestOf.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="logo"> <a href="http://subartsf.org/" target="_blank"><img class="pull-right logoImg" src="img/logo2.png"></a> </div>
+    <!-- Navigation -->
+
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle">MENU</a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-dark btn-lg pull-right toggle">CLOSE</a>
+            <li class="sidebar-brand">
+                <a id="menu-header" href="#">Art Guide</a>
+            </li>
+            <br>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">City Maps</a>
+            </li>
+            <li>
+                <a href="http://subartsf.org/about-subart/" target="_blank">About</a>
+            </li>
+        </ul>
+
+        <ul class="navbar-bottom">
+            <li>
+                <a href="#">Support</a>
+            </li>
+            <li>
+                <a href="#">FAQ</a>
+            </li>
+            <li>
+                <a href="http://subartsf.org/contact/ target="_blank"">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Social Media Icons -->
+    <nav id="nav">
+        <ul>
+            <li><a href="https://www.facebook.com/SubArtSF" target="_blank"><img src="img/fb.png"></a></li>
+            <li><a href="https://plus.google.com/105286210592567712015/posts" target="_blank"><img src="img/gplus.gif"></a></li>
+            <li><a href="https://www.pinterest.com/subarts/" target="_blank"><img src="img/pinterest.png"></a></li>
+            <li><a href="https://twitter.com/SubArtSF" target="_blank"><img src="img/twitter.png"></a></li>
+        </ul>
+    </nav>
+
+    <header id="top" class="header">
+            <h1 class="bestof"> Best Of 
+            <em class="cityname"> Munich </em>
+        </h1> 
+    </header>
+
+    <section id="station1" class="station">
+        <span class="shareLinks"> 
+            <p> Share:
+               <a href="#"><img src="img/fb.png"></a>
+                <a href="#"><img src="img/gplus.gif"></a>
+                <a href="#"><img src="img/pinterest.png"></a>
+                <a href="#"><img src="img/twitter.png"></a>
+            </p>
+        
+        </span>
+        <div class="nameView"> 
+            <p class="stationName"> Namur Station </p>
+            <a class="viewOnMap" href="#"> View On Map >> </a>
+        </div>
+    </section>
+
+        <section id="station2" class="station">
+        <span class="shareLinks"> 
+            <p> Share:
+               <a href="https://www.facebook.com/dialog/share?
+                        app_id=145634995501895
+                        &display=popup
+                        &href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2F
+                        &redirect_uri=file:"><img src="img/fb.png"></a>
+                <a href="#"><img src="img/gplus.gif"></a>
+                <a href="#"><img src="img/pinterest.png"></a>
+                <a href="#"><img src="img/twitter.png"></a>
+            </p>
+        
+        </span>
+        <div class="nameView"> 
+            <p class="stationName"> Namur Station </p>
+            <a class="viewOnMap" href="#"> View On Map >> </a>
+        </div>
+    </section>
+
+    <footer>
+        <h1 class="bestof" id="explore"> Explore more... </h1>
+
+        <nav id="nav">
+            <ul>
+                <li><a href="#"><img src="img/fb.png"></a></li>
+                <li><a href="#"><img src="img/gplus.gif"></a></li>
+                <li><a href="#"><img src="img/pinterest.png"></a></li>
+                <li><a href="#"><img src="img/twitter.png"></a></li>
+            </ul>
+        </nav>
+
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    </script>
+
+</body>
+
+</html>
