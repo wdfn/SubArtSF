@@ -1,0 +1,164 @@
+<html>
+
+<head>
+	<title> City Maps </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	
+
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.css" />
+	<link type="text/css" rel="stylesheet" href="css/citymaps.css" />
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans">
+
+
+</head>
+
+    <!-- Navigation -->
+
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle">MENU</a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-dark btn-lg pull-right toggle">CLOSE</a>
+            <li class="sidebar-brand">
+                <a id="menu-header" href="#">Subway Art Guide</a>
+            </li>
+            <br>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="citymaps.html">City Maps</a>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+        </ul>
+
+        <ul class="navbar-bottom">
+            <li>
+                <a href="#">Support</a>
+            </li>
+            <li>
+                <a href="#">FAQ</a>
+            </li>
+            <li>
+                <a href="#">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+
+<body>
+
+    <div id="logo"><a href="http://subartsf.org/"><img class="pull-right" src="img/logo2.png" width=85em height=50em></a></div>
+
+    <nav id="nav">
+        <ul>
+            <li><a href="https://www.facebook.com/SubArtSF"><img src="img/fb.png" width=30em height=30em></a></li>
+            <li><a href="https://plus.google.com/105286210592567712015/posts"><img src="img/gplus.gif" width=30em height=30em></a></li>
+            <li><a href="https://www.pinterest.com/subarts/"><img src="img/pinterest.png" width=30em height=30em></a></li>
+            <li><a href="https://twitter.com/SubArtSF"><img src="img/twitter.png" width=30em height=30em></a></li>
+        </ul>
+    </nav>
+
+    <div class="slide" id="slide0" data-slide="0" data-stellar-background-ratio='0.5'>
+    <br>
+    <p> CITY MAPS </p>
+    </div>
+
+<div class="well well-lg" id="slide1">
+<div class="row">
+  <div class="col-md-3 centered">
+    <h2>Europe</h2>
+    <div class="cities">
+        Barcelona<br>
+        Moscow<br>
+        Munich<br>
+        Paris<br>
+        Stockholm<br>
+    </div>
+  </div>
+
+  <div class="col-md-3 centered">
+    <h2>Asia</h2>
+    <div class="cities">
+        Hong Kong<br>
+        Taiwan<br>
+        City3<br>
+        City4<br>
+    </div>
+  </div>
+
+  <div class="col-md-3 centered">
+    <h2>South America</h2>
+    <div class="cities">
+        Buenos Aires<br>
+        Santiago<br>
+        City3<br>
+        City4<br>
+    </div>
+  </div>
+
+  <div class="col-md-3 centered">
+    <h2>North America</h2>
+    <div class="cities">
+        Los Angeles<br>
+        Montreal<br>
+        New York<br>
+        San Francisco<br>
+        Toronto<br>
+    </div>
+  </div>
+</div>
+    
+</div>
+
+    <div class="slide" body id="slide2" data-slide="2" data-stellar-background-ratio='0.5'>
+
+        <img src="img/worldmap.jpeg" style="position:relative; top:0; left:0;" align="center"/>
+        <img src="img/point.jpg" style="position:absolute; top:245; left:170;"/>
+        <img src="img/point.jpg" style="position:absolute; top:220; left:345;"/>
+        <img src="img/point.jpg" style="position:absolute; top:180; left:795;"/>
+        <img src="img/point.jpg" style="position:absolute; top:275; left:190;"/>
+        <img src="img/point.jpg" style="position:absolute; top:525; left:345;"/>
+        <img src="img/point.jpg" style="position:absolute; top:475; left:375;"/>
+        <img src="img/point.jpg" style="position:absolute; top:310; left:960;"/>
+        <img src="img/point.jpg" style="position:absolute; top:310; left:980;"/>
+        <img src="img/point.jpg" style="position:absolute; top:250; left:560;"/>
+        <img src="img/point.jpg" style="position:absolute; top:190; left:350;"/>
+        <img src="img/point.jpg" style="position:absolute; top:190; left:375;"/>
+        
+        <img src="img/point.jpg" style="position:absolute; top:190; left:375;"/>
+        <img src="img/point.jpg" style="position:absolute; top:190; left:375;"/>
+        <img src="img/point.jpg" style="position:absolute; top:230; left:580;"/>
+        <img src="img/point.jpg" style="position:absolute; top:160; left:625;"/>
+        <img src="img/point.jpg" style="position:absolute; top:215; left:600;"/>
+
+
+</div>
+    
+     <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    </script>
+
+</body>
+</html>
+   

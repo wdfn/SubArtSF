@@ -7,7 +7,11 @@
 /* Global Styles */
 
 body {
-    background: url('../img/munich-header.jpg') no-repeat;
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.65), 
+      rgba(0, 0, 0, 0.65)
+    ),
+    url('../img/munich-header.jpg') no-repeat;
     background-size: 100%;
     font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
     z-index: -1;
@@ -359,12 +363,13 @@ img {
     display: block;
 }
 
-.viewOnMap {
+.viewOnMap, .viewOnMap a, .viewOnMap a:hover {
     padding-bottom: 0.25em;
     padding-left: 1em;
     font-family:"Adobe Garamond Pro";
     font-style: italic;
     display: block;
+    color:white;
 }
 
 
@@ -402,7 +407,11 @@ img {
 
 footer {
     padding-top: 0;
-    background: url('../img/munich-footer.jpg') no-repeat;
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.65), 
+      rgba(0, 0, 0, 0.65)
+    ),
+    url('../img/munich-footer.jpg') no-repeat;
     background-color: black;
     background-size: 100%;
     opacity: .7;
